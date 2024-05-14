@@ -17,12 +17,12 @@ const HrLogin = () => {
   };
   return (
     <main className={styles.mean}>
-      <div>
+      <div className="col-6 col-sm-12 col-md-6">
         <img src={f}></img>
       </div>
 
       <div
-        className="col-4 p-5 mx-auto bg-secondary p-5 mb-4"
+        className="col-6 col-sm-12 col-md-6 p-5 mx-auto bg-secondary p-5 mb-4"
         id={styles.hrlogin}
       >
         <h3 className={styles.head}>Login Here</h3>
