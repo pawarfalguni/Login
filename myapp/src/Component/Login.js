@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import f from "../Image/f.jpg";
-import styles from "./HrLogin.module.css";
+import styles from "./Login.module.css";
 import { NavLink } from "react-router-dom";
 
-const HrLogin = () => {
+const Login = () => {
   const [uname, setUname] = useState("");
   const [pwd, setPwd] = useState("");
 
@@ -15,18 +15,16 @@ const HrLogin = () => {
       alert("Invalid Data");
     }
   };
+
   return (
-    <main className={styles.mean}>
-      <div className="col-6 col-sm-12 col-md-6">
-        <img src={f}></img>
+    <div className={styles.head}>
+      <div className="col-6 col-xl-6 col-md-6 col-sm-12">
+        <img className={styles.image} src={f} alt="" />
       </div>
 
-      <div
-        className="col-6 col-sm-12 col-md-6 p-5 mx-auto bg-secondary p-5 mb-4"
-        id={styles.hrlogin}
-      >
-        <h3 className={styles.head}>Login Here</h3>
-        <form onSubmit={submitHandler}>
+      <div className="col-6 col-xl-6 col-md-6 col-sm-12">
+        <form onSubmit={submitHandler} className={styles.login}>
+          <h3 className="p-3">Login Here</h3>
           <input
             type="text"
             name="uname"
@@ -54,13 +52,17 @@ const HrLogin = () => {
               <li>Register here</li>
             </NavLink>
           </div>
-          <input type="submit" value="Login" className="btn btn-success" />
+          <input
+            type="submit"
+            value="Login"
+            className="btn btn-success mt-3 p-2"
+          />
           <br />
           <br />
         </form>
-        <br></br>
       </div>
-    </main>
+    </div>
   );
 };
-export default HrLogin;
+
+export default Login;

@@ -1,0 +1,89 @@
+/* css start here */
+
+.login{
+  width: 60%;
+  height: 54vh;
+  border-radius: 5px;
+  padding: 20px;
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+  margin-left: 90px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.login input{
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+}
+.head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 30px;
+}
+
+.image{
+  width: 65%;
+  height: 38vh;
+  margin-left: 50px;
+  
+}
+
+.register li{
+  float: right;
+  list-style: none;
+  color: rgb(122, 30, 122);
+  border-bottom: 1px solid gray;
+  margin-bottom: 10px;
+}
+
+.register li:hover{
+  font-weight: 500;
+  color: rgb(36, 6, 36);
+}
+
+/* Media query for Responsive Page */
+
+
+@media (max-width:799px){     /*Ipad view*/
+
+  .login{
+    width: 80%;
+    height: 33vh;
+    margin-right: 10px;
+    margin-left: 40px;
+  }
+  .image{
+    width: 67%;
+    height: 25vh;
+    margin-left: 45px;
+  }
+
+}
+
+@media (max-width:477px){     /*Phone view*/
+
+  .head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 30px;
+  }
+  .login{
+    width: 150%;
+    height: 42vh;
+    margin-left: -35px;
+  }
+  .image{
+    width: 110%;
+    height: 23vh;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+
+
+}

@@ -74,7 +74,8 @@ const EmployeeData = () => {
             Phone
           </label>
           <input
-            type="phone"
+            type="tel"
+            pattern="[789][0-9]{9}"
             name="phone"
             className="form-control"
             id="exampleInputPhone1"
