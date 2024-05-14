@@ -17,7 +17,11 @@
   font-style: normal;
 }
 /* Media Query Start */
-
+@media (max-width:1024px){     /*Desktop view*/
+  .header{
+    height: 3vh;
+  }
+}
 @media(max-width: 799px){
   .name{
     font-size: larger;
